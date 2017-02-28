@@ -1,9 +1,9 @@
 function landingMsg(){
-  $('.header h1').fadeIn(1400, function(){
-    $('.header h4, .header hr').fadeIn(1200);
+  $('.header h1').fadeIn(1100, function(){
+    $('.header h4, .header hr').fadeIn(900);
     $('.header hr').animate({
       width: '26%'
-    }, 1200);
+    }, 1100);
   });
 };
 
@@ -18,4 +18,4 @@ $('.navbar-nav li').mouseenter(function(){
 });
 
 
-setTimeout(landingMsg, 2000);
+setTimeout(landingMsg, 1500);

@@ -9,6 +9,26 @@ body {
   background-repeat: no-repeat;
 }
 
+/*    NavBar    */
+
+.navbar-inverse {
+  background-color: rgba(26, 25, 25, 0.86);
+  border: none;
+}
+
+.navbar-brand i {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.header h1 {
+  font-size: 43px;
+}
+
+
 .header h1, .header h4, .header hr {
   display: none;
 }
