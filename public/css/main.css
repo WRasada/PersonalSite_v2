@@ -1,0 +1,25 @@
+html {
+  height: 100%;
+}
+
+body {
+  background: url('../images/bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header {
+  padding-top: 15%;
+  text-align: center;
+  color: white;
+}
+
+.header h1, .header h4 {
+  text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.77);
+}
+
+.header hr {
+  box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.8);
+  width: 30%;
+}
