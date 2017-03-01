@@ -1,11 +1,13 @@
-html {
-  height: 100%;
-}
-body {
+html, body {
   height: 100%;
 }
 
+body {
+  margin-bottom: -70px;
+}
+
 .homeHeader {
+  margin-bottom: -70px;
   height: 100%;
   background: url('../images/bg.jpg');
   background-size: cover;
@@ -117,10 +119,10 @@ body {
 
 footer {
   font-size: 12px;
-  margin-top: 70px;
   height: 70px;
   color: rgb(112, 112, 112);
-  background-color: rgb(24, 25, 29);
+  background-color: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
 }
 
 footer p {
@@ -132,8 +134,6 @@ footer ul {
   float: right;
   padding: 23px 50px 0 0;
 }
-
-
 
 textarea {
   resize:none;
