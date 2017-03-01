@@ -1,10 +1,39 @@
 <% include ./partials/header %>
 
 <div class="container-fluid contactHeader">
-  <div class="header">
+  <div class="contactMsg">
 
-    <h1>Contact Me</h1>
+    <h1>Contact Me!</h1>
+    <h4>I'll draw anything!</h4>
   </div>
 </div>
 
+<div class="container contactForm">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="well">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+
+
+    <div class="col-md-6">
+      <div class="well">
+        <form class="form-group" action="index.html" method="post">
+          <label for="name">Name:</label>
+          <input class="form-control" id="name" type="text" name="" value="">
+        </form>
+        <form class="form-group" action="index.html" method="post">
+          <label>Email:</label>
+          <input class="form-control" type="text" name="" value="">
+        </form>
+        <form class="form-group" action="index.html" method="post">
+          <label>Text:</label>
+          <textarea class="form-control" rows="8"></textarea>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
 <% include ./partials/footer %>

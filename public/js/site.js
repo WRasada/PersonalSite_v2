@@ -1,11 +1,11 @@
-$('.header h1').fadeIn(1400, function(){
+$('.landingHeader h1').fadeIn(1400, function(){
 
 });
-$('.header hr').fadeIn(1100, function(){
-  $('.header hr').animate({
+$('.landingHeader hr').fadeIn(1100, function(){
+  $('.landingHeader hr').animate({
     width: '25%'
   }, 1100, function(){
-    $('.header h4').fadeIn(900, function(){
+    $('.landingHeader h4').fadeIn(900, function(){
       $('.landingQuote').fadeIn(1300);
     });
   });
