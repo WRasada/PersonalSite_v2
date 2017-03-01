@@ -1,11 +1,15 @@
-function landingMsg(){
-  $('.header h1').fadeIn(1100, function(){
-    $('.header h4, .header hr').fadeIn(900);
-    $('.header hr').animate({
-      width: '26%'
-    }, 1100);
+$('.header h1').fadeIn(1400, function(){
+
+});
+$('.header hr').fadeIn(1100, function(){
+  $('.header hr').animate({
+    width: '25%'
+  }, 1100, function(){
+    $('.header h4').fadeIn(900, function(){
+      $('.landingQuote').fadeIn(1300);
+    });
   });
-};
+});
 
 $('.navbar-nav li').mouseenter(function(){
 	if($(this).hasClass('active')){
@@ -16,6 +20,3 @@ $('.navbar-nav li').mouseenter(function(){
     });
   }
 });
-
-
-setTimeout(landingMsg, 1500);
