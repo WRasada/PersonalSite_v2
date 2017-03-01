@@ -1,13 +1,10 @@
 html {
   height: 100%;
 }
-
 body {
   height: 100%;
 }
-
 .homeHeader {
-  margin-top: -70px;
   height: 100%;
   background: url('../images/bg.jpg');
   background-size: cover;
@@ -18,7 +15,7 @@ body {
 
 .navbar-default {
   background-color: rgba(20, 20, 20, 0.8);
-  margin-bottom: 0;
+  margin-bottom: -50px;
   border: none;
 }
 
@@ -53,7 +50,7 @@ body {
 }
 
 .landingHeader {
-  padding-top: 25%;
+  padding-top: 17%;
   text-align: center;
   color: white;
 }
