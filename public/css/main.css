@@ -2,12 +2,18 @@ html, body {
   height: 100%;
 }
 
-body {
-  margin-bottom: -70px;
+.site {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.siteContent {
+  flex: 1;
 }
 
 .homeHeader {
-  margin-bottom: -70px;
+  padding-bottom: 60px;
   height: 100%;
   background: url('../images/bg.jpg');
   background-size: cover;
@@ -20,6 +26,8 @@ body {
   background-color: rgba(20, 20, 20, 0.8);
   margin-bottom: -50px;
   border: none;
+  position: fixed;
+  width: 100%;
 }
 
 .navbar-brand i {
@@ -53,7 +61,7 @@ body {
 }
 
 .landingHeader {
-  padding-top: 17%;
+  padding-top: 340px;
   text-align: center;
   color: white;
 }
@@ -85,8 +93,9 @@ body {
 
 /*   Contact Page   */
 
-.contactHeader {
+#contactHeader {
   background: url('../images/bg2.jpg');
+  padding-top: 70px;
   margin-top: -70px;
 }
 
@@ -118,11 +127,11 @@ body {
 }
 
 footer {
+  margin-top: -70px;
   font-size: 12px;
   height: 70px;
   color: rgb(112, 112, 112);
   background-color: rgba(0, 0, 0, 0.8);
-  overflow: hidden;
 }
 
 footer p {
