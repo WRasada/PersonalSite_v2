@@ -28,6 +28,7 @@ html, body {
   border: none;
   position: fixed;
   width: 100%;
+  z-index: 2;
 }
 
 .navbar-brand i {
@@ -126,22 +127,27 @@ html, body {
   background-color: rgba(0, 0, 0, 0.79);
 }
 
+.homeFooter {
+  margin-top: -7vh;
+}
+
+.footerIcons {
+  float: right;
+}
+
+.footerIcons a {
+  margin: 0 4px;
+}
+footer p {
+  line-height: 7vh;
+  margin: 0;
+}
+
 footer {
-  margin-top: -70px;
   font-size: 12px;
-  height: 70px;
+  height: 7vh;
   color: rgb(112, 112, 112);
   background-color: rgba(0, 0, 0, 0.8);
-}
-
-footer p {
-  float: left;
-  padding: 26px 0 0 50px;
-}
-
-footer ul {
-  float: right;
-  padding: 23px 50px 0 0;
 }
 
 textarea {
