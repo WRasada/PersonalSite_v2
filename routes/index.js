@@ -4,19 +4,19 @@ var passport = require('passport');
 var User     = require('../models/user');
 
 router.get('/', function(req, res){
-  res.render('home');
+  res.render('home', {title: 'Conor Hernandez'});
 });
 
 router.get('/about', function(req, res){
-  res.render('about');
+  res.render('about', {title: 'Conor Hernandez | About Me'});
 });
 
 router.get('/contact', function(req, res){
-  res.render('contact');
+  res.render('contact', {title: 'Conor Hernandez | Contact Me'});
 });
 
 router.get('/gallery', function(req, res){
-  res.render('gallery');
+  res.render('gallery', {title: 'Conor Hernandez | Gallery'});
 });
 
 module.exports = router;
