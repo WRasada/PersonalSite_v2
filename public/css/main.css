@@ -142,8 +142,8 @@ footer p {
 footer {
   font-size: 12px;
   height: 7vh;
-  color: rgb(112, 112, 112);
-  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(167, 167, 167);
+  background-color: rgba(20, 20, 20, 0.8);
 }
 
 textarea {
