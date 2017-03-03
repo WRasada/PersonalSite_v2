@@ -6,12 +6,15 @@ var express        = require('express'),
     passport       = require('passport'),
     localStrategy  = require('passport-local'),
     methodOverride = require('method-override'),
-    User           = require('./models/user');
+    User           = require('./models/user'),
+    Blog           = require('./models/blog'),
+    Comment        = require('./models/comment');
 
 var indexRoutes    = require('./routes/index');
+var blogRoutes     = require('./routes/blog');
 
-var url = process.env.DATABASEURL || 'mongodb://localhost/conor_db';
-mongoose.connect(url);
+// var url = process.env.DATABASEURL || 'mongodb://localhost/conor_db';
+mongoose.connect('mongodb://localhost/conor_db');
 
 app.set('view engine', 'ejs');
 app.use(bodyParser.urlencoded({extended: true}));
@@ -34,9 +37,12 @@ passport.deserializeUser(User.deserializeUser());
 
 app.use(function(req, res, next){
   res.locals.currentUser = req.user;
+  res.locals.error       = req.flash('error');
+  res.locals.success     = req.flash('success');
   next();
 });
 
 app.use('/', indexRoutes);
+app.use('/', blogRoutes);
 
 app.listen(process.env.PORT || 3000, process.env.IP);

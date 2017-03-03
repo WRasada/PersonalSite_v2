@@ -21,7 +21,9 @@ html, body {
   background-position: center;
 }
 /*    NavBar    */
-
+.flashMsg {
+  margin-top: 70px;
+}
 .navbar-default {
   background-color: rgba(20, 20, 20, 0.8);
   margin-bottom: -50px;
@@ -148,4 +150,10 @@ footer {
 
 textarea {
   resize:none;
+}
+
+/*       Blog        */
+
+.blogWrapper {
+  margin-top: 90px;
 }

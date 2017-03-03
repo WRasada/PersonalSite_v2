@@ -1,0 +1,20 @@
+<% include ./partials/header %>
+<div class="blogWrapper">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <% if(!currentUser){ %>
+          <h1>Create an account to comment on my Blog!</h1>
+          <br>
+          <a class="btn btn-primary btn-lg" href="/login">LOGIN</a>
+          <a class="btn btn-primary btn-lg" href="/register">REGISTER</a>
+        <% } else { %>
+          <h1>Welcome to my Blog <%= currentUser.username %></h1>
+        <% } %>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<% include ./partials/footer %>
